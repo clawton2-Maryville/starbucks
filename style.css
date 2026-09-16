@@ -1,0 +1,191 @@
+/* Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e3932;
+    background-color: #ffffff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+    color: #00754a;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #1e3932;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #00754a;
+}
+
+/* Hero */
+.hero {
+    background-color: #d4e9e2;
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.small-heading {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #00754a;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+button {
+    background-color: #00754a;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 13px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Featured section */
+.featured {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 30%;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+}
+
+.drink-icon {
+    font-size: 45px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.5;
+    color: #555555;
+}
+
+.card a {
+    color: #00754a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Rewards section */
+.rewards {
+    background-color: #1e3932;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.rewards h2 {
+    font-size: 32px;
+}
+
+.rewards p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.light-button {
+    background-color: white;
+    color: #1e3932;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
